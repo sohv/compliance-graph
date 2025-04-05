@@ -14,6 +14,7 @@ pyyaml
 requests
 tqdm
 typing-extensions
+python-dotenv
 langchain-core
 langchain-text-splitters
 langsmith
@@ -44,3 +45,10 @@ httpx-sse
 llmsherpa
 pandas
 sentence-transformers
+tensorflow
+keras
+tensorflow-text
+tensorflow-io
+scikit-learn
+py2neo
+tf-keras
