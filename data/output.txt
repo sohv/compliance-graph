@@ -1,0 +1,33 @@
+Synthetic Financial Rules and Transactions Data
+Terms and Conditions Document
+Section: Late Fees
+- Late fees for overdue payments cannot exceed $50 per transaction.
+- A late fee is applicable only after 7 days past the payment due date.
+- No late fees shall be charged if the overdue amount is less than $10.
+Section: Discounts
+- A 10% discount applies to purchases exceeding $100.
+- Discounts cannot be combined with promotional offers.
+- Discounts are valid only during the billing period in which they are issued.
+Section: Payment Deadlines
+- All invoices must be paid within 30 days of issuance.
+- Payments made after 30 days will be considered overdue and subject to late fees.
+- Partial payments are allowed but do not extend the payment deadline.
+Section: Refunds and Cancellations
+- Refund requests must be submitted within 14 days of the transaction date.
+- Refunds are processed within 7 business days after approval.
+- A $5 cancellation fee applies for any orders canceled after processing.
+Section: Transaction Limits
+- Single transactions exceeding $5,000 must be approved by a manager.
+- Daily transaction limits for a single user cannot exceed $20,000.
+- Transactions flagged for suspicious activity are held for review.
+Section: Account Restrictions- Accounts inactive for over 180 days will be flagged for review.
+- Users must verify their email address within 30 days of account creation.
+- Accounts with unverified payment methods cannot complete transactions.
+Section: Promotional Offers
+- Promotional offers are valid for a single use only.
+- Offers cannot be applied retroactively to past purchases.
+- Promotional codes must be entered during checkout to be valid.
+Section: User Responsibilities
+- Users must maintain accurate contact information on their account.
+- Users are responsible for safeguarding their account credentials.
+- Disputes regarding transactions must be reported within 30 days.

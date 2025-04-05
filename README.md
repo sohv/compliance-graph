@@ -2,23 +2,6 @@
 
 This project checks for financial compliance of transactions by storing compliance rules in knowledge graphs and using them to assess transaction adherence.
 
-## Project Structure
-
-```
-.
-├── src/
-│   ├── pdf_processing/
-│   │   └── pdf_reader.py
-│   ├── rule_extraction/
-│   │   └── rule_extractor.py
-│   └── main.py
-├── data/
-├── config/
-│   └── config.py
-├── utils/
-├── requirements.txt
-└── README.md
-```
 
 ## Setup
 
