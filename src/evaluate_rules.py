@@ -34,6 +34,9 @@ def get_annotated_rules():
 full_rules = get_full_rules()
 rule_ls = get_annotated_rules()
 
+print(f"Number of extracted rules: {len(full_rules)}")
+print(f"Number of annotated rules: {len(rule_ls)}")
+
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 full_rule_embeddings = model.encode(full_rules)
@@ -50,12 +53,12 @@ for j, rule_embedding in enumerate(rule_ls_embeddings):
     closest_match_index = np.argmax(similarities)
     highest_similarity = similarities[0][closest_match_index]
 
-    if highest_similarity >= 0.95:
+    if highest_similarity >= 0.80:
         score_ls.append(highest_similarity)
-    elif 0.85 <= highest_similarity < 0.95:
+    elif 0.60 <= highest_similarity < 0.80:
         partial += 1
         score_ls.append(highest_similarity)
-    elif 0.75 <= highest_similarity < 0.85:
+    elif 0.40 <= highest_similarity < 0.60:
         similars += 1
         score_ls.append(highest_similarity)
     else:
