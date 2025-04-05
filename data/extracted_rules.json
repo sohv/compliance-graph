@@ -1,0 +1,177 @@
+[
+    {
+        "RuleID": "R001",
+        "FullRule": "Late fees for overdue payments cannot exceed $50 per transaction.",
+        "Condition": "Overdue payment",
+        "Action": "Charge late fee (max $50)",
+        "Regulation": "Company Policy"
+    },
+    {
+        "RuleID": "R002",
+        "FullRule": "A late fee is applicable only after 7 days past the payment due date.",
+        "Condition": "Payment > 7 days overdue",
+        "Action": "Apply late fee",
+        "Regulation": "Company Policy"
+    },
+    {
+        "RuleID": "R003",
+        "FullRule": "No late fees shall be charged if the overdue amount is less than $10.",
+        "Condition": "Overdue amount < $10",
+        "Action": "Do not charge late fee",
+        "Regulation": "Company Policy"
+    },
+    {
+        "RuleID": "R004",
+        "FullRule": "A 10% discount applies to purchases exceeding $100.",
+        "Condition": "Purchase > $100",
+        "Action": "Apply 10% discount",
+        "Regulation": "Company Policy"
+    },
+    {
+        "RuleID": "R005",
+        "FullRule": "Discounts cannot be combined with promotional offers.",
+        "Condition": "Discount and promotional offer used together",
+        "Action": "Do not apply discount",
+        "Regulation": "Company Policy"
+    },
+    {
+        "RuleID": "R006",
+        "FullRule": "Discounts are valid only during the billing period in which they are issued.",
+        "Condition": "Discount used outside billing period",
+        "Action": "Do not apply discount",
+        "Regulation": "Company Policy"
+    },
+    {
+        "RuleID": "R007",
+        "FullRule": "All invoices must be paid within 30 days of issuance.",
+        "Condition": "Invoice issued",
+        "Action": "Pay invoice within 30 days",
+        "Regulation": "Company Policy"
+    },
+    {
+        "RuleID": "R008",
+        "FullRule": "Payments made after 30 days will be considered overdue and subject to late fees.",
+        "Condition": "Payment > 30 days past due",
+        "Action": "Consider payment overdue; apply late fees",
+        "Regulation": "Company Policy"
+    },
+    {
+        "RuleID": "R009",
+        "FullRule": "Partial payments are allowed but do not extend the payment deadline.",
+        "Condition": "Partial payment received",
+        "Action": "Accept partial payment; do not extend deadline",
+        "Regulation": "Company Policy"
+    },
+    {
+        "RuleID": "R010",
+        "FullRule": "Refund requests must be submitted within 14 days of the transaction date.",
+        "Condition": "Refund request submitted",
+        "Action": "Submit refund request within 14 days",
+        "Regulation": "Company Policy"
+    },
+    {
+        "RuleID": "R011",
+        "FullRule": "Refunds are processed within 7 business days after approval.",
+        "Condition": "Refund approved",
+        "Action": "Process refund within 7 business days",
+        "Regulation": "Company Policy"
+    },
+    {
+        "RuleID": "R001",
+        "FullRule": "Refund requests must be submitted within 14 days of the transaction date.",
+        "Condition": "Refund request",
+        "Action": "Submit within 14 days of transaction",
+        "Regulation": "Company Policy"
+    },
+    {
+        "RuleID": "R002",
+        "FullRule": "Refunds are processed within 7 business days after approval.",
+        "Condition": "Refund approved",
+        "Action": "Process refund within 7 business days",
+        "Regulation": "Company Policy"
+    },
+    {
+        "RuleID": "R003",
+        "FullRule": "A $5 cancellation fee applies for any orders canceled after processing.",
+        "Condition": "Order canceled after processing",
+        "Action": "Apply $5 cancellation fee",
+        "Regulation": "Company Policy"
+    },
+    {
+        "RuleID": "R004",
+        "FullRule": "Single transactions exceeding $5,000 must be approved by a manager.",
+        "Condition": "Transaction > $5,000",
+        "Action": "Require manager approval",
+        "Regulation": "Company Policy"
+    },
+    {
+        "RuleID": "R005",
+        "FullRule": "Daily transaction limits for a single user cannot exceed $20,000.",
+        "Condition": "Daily transactions > $20,000",
+        "Action": "Restrict transactions",
+        "Regulation": "Company Policy"
+    },
+    {
+        "RuleID": "R006",
+        "FullRule": "Accounts inactive for over 180 days will be flagged for review.",
+        "Condition": "Account inactive for > 180 days",
+        "Action": "Flag account for review",
+        "Regulation": "Company Policy"
+    },
+    {
+        "RuleID": "R007",
+        "FullRule": "Users must verify their email address within 30 days of account creation.",
+        "Condition": "Account created",
+        "Action": "Verify email within 30 days",
+        "Regulation": "Company Policy"
+    },
+    {
+        "RuleID": "R008",
+        "FullRule": "Accounts with unverified payment methods cannot complete transactions.",
+        "Condition": "Unverified payment method",
+        "Action": "Prevent transactions",
+        "Regulation": "Company Policy"
+    },
+    {
+        "RuleID": "R009",
+        "FullRule": "Promotional offers are valid for a single use only.",
+        "Condition": "Promotional offer used",
+        "Action": "Invalidate further use",
+        "Regulation": "Company Policy"
+    },
+    {
+        "RuleID": "R010",
+        "FullRule": "Offers cannot be applied retroactively to past purchases.",
+        "Condition": "Attempt to apply offer retroactively",
+        "Action": "Reject offer application",
+        "Regulation": "Company Policy"
+    },
+    {
+        "RuleID": "R011",
+        "FullRule": "Promotional codes must be entered during checkout to be valid.",
+        "Condition": "Promotional code not entered during checkout",
+        "Action": "Invalidate promotional code",
+        "Regulation": "Company Policy"
+    },
+    {
+        "RuleID": "R001",
+        "FullRule": "Offers cannot be applied retroactively to past purchases.",
+        "Condition": "Attempt to apply offer to past purchase",
+        "Action": "Reject offer application",
+        "Regulation": "Company Policy"
+    },
+    {
+        "RuleID": "R002",
+        "FullRule": "Promotional codes must be entered during checkout to be valid.",
+        "Condition": "Promotional code not entered during checkout",
+        "Action": "Invalidate promotional code",
+        "Regulation": "Company Policy"
+    },
+    {
+        "RuleID": "R003",
+        "FullRule": "Disputes regarding transactions must be reported within 30 days.",
+        "Condition": "Transaction dispute",
+        "Action": "Report dispute within 30 days",
+        "Regulation": "Company Policy"
+    }
+]
