@@ -1,10 +1,13 @@
 import os
 from neo4j import GraphDatabase
+import sqlite3
 from dotenv import load_dotenv
 from pathlib import Path
+from sentence_transformers import SentenceTransformer
+import numpy as np
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
-project_root = Path(script_dir).parent.parent
+project_root = Path(script_dir).parent
 
 load_dotenv(os.path.join(project_root, '.env'))
 
@@ -22,14 +25,12 @@ try:
     driver = GraphDatabase.driver(uri, auth=(username, password))
     
     # test connection
-    def test_connection(tx):
-        result = tx.run("MATCH (n) RETURN count(n) AS node_count")
-        for record in result:
-            print(f"Number of nodes in DB: {record['node_count']}")
-
     with driver.session() as session:
-        session.read_transaction(test_connection)
-        print("Successfully connected to Neo4j database!")
-        
+        result = session.run("MATCH (n) RETURN count(n) as count")
+        count = result.single()["count"]
+        print(f"Number of nodes in DB: {count}")
+    print("Successfully connected to Neo4j database!")
+    
 except Exception as e:
     print(f"Error connecting to Neo4j database: {e}")
+    exit(1)
