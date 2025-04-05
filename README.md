@@ -1,6 +1,6 @@
 # Financial Compliance Using Knowledge Graphs
 
-This is a **project prototype** checks for financial compliance of transactions by storing compliance rules in knowledge graphs and using 
+This **project prototype** checks for financial compliance of transactions by storing compliance rules in knowledge graphs and using 
 them to assess transaction adherence.
 
 ## Overview
