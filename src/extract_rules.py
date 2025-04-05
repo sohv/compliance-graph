@@ -86,8 +86,8 @@ def extract_financial_rules(text_document: str) -> list:
         json_text = response.text[json_start:json_end]
         return json.loads(json_text)  # convert string to JSON
     except (json.JSONDecodeError, ValueError) as e:
-        print(f"❌ JSON Parsing Error: {e}")
-        print(f"🔍 Raw Output: {response.text}")
+        print(f"JSON Parsing Error: {e}")
+        print(f"Raw Output: {response.text}")
         return [] 
 
 def main():
@@ -124,12 +124,12 @@ def main():
                 all_extracted_rules.extend(extracted_rules)  # append structured JSON output
             time.sleep(2)  # add delay
         except Exception as e:
-            print(f"❌ Error processing chunk: {e}")
+            print(f"Error processing chunk: {e}")
 
     with open(output_json, 'w', encoding='utf-8') as f:
         json.dump(all_extracted_rules, f, indent=4)
     
-    print(f"✅ Extracted rules have been saved to: {output_json}")
+    print(f"Extracted rules have been saved to: {output_json}")
 
     full_rules = [rule["FullRule"] for rule in all_extracted_rules if "FullRule" in rule]
 
