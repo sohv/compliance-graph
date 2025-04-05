@@ -8,4 +8,4 @@ images/
 neo4j.txt
 src/compliance/__pycache__/
 src/db/__pycache__/
-check_compliance.py
+src/check_compliance.py
