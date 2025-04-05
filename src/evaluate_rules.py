@@ -20,11 +20,11 @@ def get_full_rules():
 
 def get_annotated_rules():
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    rules_json = os.path.join(script_dir, "..", "data", "annotated_rules.json")
+    rules_json = os.path.join(script_dir, "..", "data", "evaluation_rules.json")
     
     if not os.path.exists(rules_json):
-        print(f"Annotated rules file not found at: {rules_json}")
-        print("Please ensure the annotated_rules.json file exists in the data directory.")
+        print(f"Evaluation rules file not found at: {rules_json}")
+        print("Please ensure the evaluation_rules.json file exists in the data directory.")
         return []
     
     with open(rules_json, 'r', encoding='utf-8') as f:
@@ -35,7 +35,7 @@ full_rules = get_full_rules()
 rule_ls = get_annotated_rules()
 
 print(f"Number of extracted rules: {len(full_rules)}")
-print(f"Number of annotated rules: {len(rule_ls)}")
+print(f"Number of evaluation rules: {len(rule_ls)}")
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
@@ -76,7 +76,7 @@ missed_percentage = (miss / total_rules) * 100 if total_rules > 0 else 0
 avg_similarity = sum(score_ls_no_miss) / total_rules if total_rules > 0 else 0
 avg_corrected_similarity = sum(score_ls) / total_rules if total_rules > 0 else 0
 
-print(f"Total Rules: {total_rules}")
+print(f"Total Evaluation Rules: {total_rules}")  # Updated label
 print(f"Fully Recovered Rules: {fully_recovered} ({fully_recovered_percentage:.2f}%)")
 print(f"Partially Recovered Rules: {partial} ({partial_percentage:.2f}%)")
 print(f"Similar Rules: {similars} ({similar_percentage:.2f}%)")
