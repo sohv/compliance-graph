@@ -44,3 +44,8 @@ httpx-sse
 llmsherpa
 pandas
 sentence-transformers
+tensorflow
+keras
+tensorflow-text
+transformers
+tensorflow-io
