@@ -2,7 +2,7 @@
 This module provides a Neo4j database connection that can be imported by other modules. Write 'from neo4j_connect import driver' to use the driver instance.
 '''
 import os
-from neo4j import GraphDatabase
+from db import GraphDatabase
 from dotenv import load_dotenv
 from pathlib import Path
 
