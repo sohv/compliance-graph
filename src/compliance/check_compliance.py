@@ -7,10 +7,7 @@ from rule_check import RuleChecker
 
 def print_results(results):
     """
-    Prints the compliance check results in a formatted way.
-    
-    Args:
-        results (dict): Dictionary containing compliance check results
+    outputs the compliance check results in a formatted way.
     """
     print("\nTransaction Details:")
     print(f"Type: {results['transaction']['type']}")
@@ -39,7 +36,7 @@ def main():
     """
     Main function to demonstrate the compliance checking process.
     """
-    # Example transaction
+    # sample transaction
     transaction = {
         "type": "payment",
         "amount": 15000,
@@ -48,17 +45,16 @@ def main():
         "date": "2024-03-15"
     }
     
-    # Initialize retriever and checker
+    # initialize retriever and checker
     retriever = RuleRetriever()
     checker = RuleChecker()
     
-    # Get relevant rules
+    # get relevant rules
     rules = retriever.get_relevant_rules(transaction)
     
-    # Check compliance
+    # check compliance
     results = checker.check_compliance(transaction, rules)
     
-    # Print results
     print_results(results)
 
 if __name__ == "__main__":

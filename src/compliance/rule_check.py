@@ -65,14 +65,7 @@ class RuleChecker:
     
     def check_compliance(self, transaction_details, rules):
         """
-        Checks if a transaction complies with a set of rules.
-        
-        Args:
-            transaction_details (dict): Transaction information
-            rules (list): List of rules to check against
-            
-        Returns:
-            dict: Compliance check results
+        checks if a transaction complies with a set of rules.
         """
         compliance_results = {
             "transaction": transaction_details,
