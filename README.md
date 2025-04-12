@@ -92,6 +92,20 @@ python -m src.evaluate_rules
   - Number/date standardization
   - Special character handling
 
+## Why not RAG ?
+
+I have implemented a semantic search-based rule system for financial rule retrieval in this project. This is how it works :
+- Uses **SentenceTransformer** to convert word text into embeddings
+- Compares the transaction with rules stored in knowledge graph using **cosine similarity**.
+- Finds the semantically most similar rules to the transaction and returns the top k relevant rules.
+
+By employing this method, we can find relevant rules even if wording is different and also handle variations in rule descriptions.
+
+Why I chose semantic search over RAG is because :
+- Compliance needs deterministic results - RAG used LLMs that are unpredictable and we can't risk hallucinations in financial decisions.
+- Transparency - The compliance decisions must be 100% consistent, so we must show exactly what rules were applied.
+- Cost and Performance - RAG requires LLM API call for every transaction, which results in higher latency and more costs in RAG systems.
+
 ## Contributing
 
 1. Fork the repository
