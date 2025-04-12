@@ -4,7 +4,7 @@ misc/
 others/
 notes/
 .env
-images/
+images/draft1.png
 neo4j.txt
 src/compliance/__pycache__/
 src/db/__pycache__/

@@ -92,6 +92,28 @@ python -m src.evaluate_rules
   - Number/date standardization
   - Special character handling
 
+## Evaluation
+
+The system's performance in extracting and matching rules was evaluated with the following metrics:
+
+| Metric | Value |
+|--------|-------|
+| Number of extracted rules | 25 |
+| Number of rules in output.txt | 33 |
+| Fully Recovered Rules | 21 (63.64%) |
+| Partially Recovered Rules | 4 (12.12%) |
+| Similar Rules | 5 (15.15%) |
+| Missed Rules | 3 (9.09%) |
+| Average Similarity | 0.8074 |
+| Average Corrected Similarity | 0.7873 |
+| Relative Excess Extracted Rules | 0.2000 |
+
+These metrics indicate:
+- Strong rule recovery rate with 63.64% fully recovered rules
+- High average similarity (0.8074) suggesting good matching quality
+- Low miss rate (9.09%) indicating effective rule extraction
+
+
 ## Why not RAG ?
 
 I have implemented a semantic search-based rule system for financial rule retrieval in this project. This is how it works :
