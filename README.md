@@ -128,6 +128,10 @@ Why I chose semantic search over RAG is because :
 - Transparency - The compliance decisions must be 100% consistent, so we must show exactly what rules were applied.
 - Cost and Performance - RAG requires LLM API call for every transaction, which results in higher latency and more costs in RAG systems.
 
+## Limitations
+- **Real-time Updates** - Financial Compliance rules evolve rapidly and are highly subject to change. This project focuses on static rules being fed into the model as real-time integration of rules would incur extra costs in addition to LLM API expenses.
+- **Neo4j Scaling** -  The code written for Neo4j is not scalable for handling a large number of rules. My estimate is that the code can likely manage ~2000 financial rules in format **Rule-Action-Condition** stored in Neo4j database. More scalability means additional costs and further tuning of written code.
+
 ## Contributing
 
 1. Fork the repository
@@ -139,4 +143,12 @@ Why I chose semantic search over RAG is because :
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Note
+If anyone is up for funding this project, please feel free to contact me through LinkedIn or through email. I plan to incorporate three following features to build an industry-ready prototype: 
+1. An AI agent for real-time transaction compliance monitoring 
+2. A real-time rule update agent that updates knowledge graphs dynamically with new rules and updates
+3. Try out microservices cloud architecture for scalability.
+
+
 
